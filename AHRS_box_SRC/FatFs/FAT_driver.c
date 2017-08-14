@@ -2,6 +2,8 @@
 #include "UART1.h"
 #include  "IMU.h"
 
+#define FILE_BUF_LENGTH 3	//crown add，定义文件缓冲区的长度
+
 FATFS fs;  		//逻辑磁盘工作区.	 
 FIL file;	  		//文件1
 FIL ftemp;	  		//文件2.
@@ -142,8 +144,10 @@ uint32_t dtime;
 int16_t fdata_t;
 uint32_t fdata_32t;
 unsigned char File_Data[45];
-unsigned char File_Data_buf[45];
+unsigned char File_Data_buf[FILE_BUF_LENGTH*45];	//crown change，扩展到FILE_BUF_LENGTH个File_Data
 unsigned char Data_Ready = 0;
+unsigned char toFile_ptr = 0;					//crown add,文件缓冲区的指针，指向缓冲区包含内容的起始位置
+unsigned char toBuf_ptr = 0;					//crown add,文件缓冲区的指针，指向缓冲区空余的起始位置
 extern void Updata_PC_Route(void);
 void TIM4_IRQHandler(void)					//数据发送定时器。在发送的同时，将要保存的数据加载到缓冲区，准备写入SD卡
 {
@@ -243,9 +247,10 @@ if (TIM4->SR&0X0001)//溢出中断
 
 	if(Data_Ready == 0x0){ //确认数据已保存
 	for(i=0;i<sizeof(File_Data);i++) //复制数据到缓冲区
-		File_Data_buf[i] = File_Data[i];
+		File_Data_buf[toBuf_ptr*45 + i] = File_Data[i];		//crown change
 	}
-	Updata_PC_Route();
+	toBuf_ptr = (toBuf_ptr+1)%FILE_BUF_LENGTH;	//crown add
+	Updata_PC_Route();	
 	Data_Ready = 1;
 	//LED_Reverse();
 	}  
@@ -279,7 +284,21 @@ void File_head(void){
 void File_Save_Routing(void){
      
 	 if(Data_Ready){
-	 	if(mf_write(File_Data_buf,sizeof(File_Data))==0);
+		// crown change
+		if(toBuf_ptr <= toFile_ptr)
+		{
+			int start_index = toFile_ptr*45;
+			if(mf_write(File_Data_buf + start_index,sizeof(File_Data*(FILE_BUF_LENGTH-toFile_ptr))==0);		//先写一段
+			if(mf_write(File_Data_buf,sizeof(File_Data*(toBuf_ptr))==0);		//再写令一段
+
+		}
+		else
+		{
+			int start_index = toFile_ptr*45;
+			int temp_write_length = toBuf_ptr - toFile_ptr;
+			if(mf_write(File_Data_buf+start_index,sizeof(File_Data*temp_write_length))==0);				//这种情况下可以一次写完
+		}
+		toFile_ptr = toBuf_ptr;		//crown add,更新toFile_ptr指针的位置
 		Data_Ready = 0;
 	}
 
