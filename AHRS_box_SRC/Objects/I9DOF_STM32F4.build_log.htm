@@ -1,0 +1,777 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: dfe User, China, LIC=BPP56-DY3SM-ZMT9P-MJQPP-NQ065-LZ0TC
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Basic (256K)  Version: 5.12.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARMCM3.DLL V5.12.0.0
+Dialog DLL:      DCM.DLL V1.13.0.0
+    Target DLL: Segger\JL2CM3.dll
+Dialog DLL:      TCM.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+I:\IMU\ADI_AHRS\I9DOF_F401\I9DOF_STM32F4.uvproj
+Project File Date:  10/18/2014
+
+<h2>Output:</h2>
+Build target 'STM32F401'
+compiling main.c...
+linking...
+Program Size: Code=996 RO-data=408 RW-data=0 ZI-data=1632  
+FromELF: creating hex file...
+".\Output\I9DOF_STM32F4.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  I:\IMU\ADI_AHRS\I9DOF_F401\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Load "I:\\IMU\\ADI_AHRS\\I9DOF_F401\\Output\\I9DOF_STM32F4.axf" 
+* JLink Info: Device "UNSPECIFIED" selected (0 KB flash, 0 KB RAM).
+Set JLink Project File to "I:\IMU\ADI_AHRS\I9DOF_F401\JLinkSettings.ini"
+* JLink Info: Device "UNSPECIFIED" selected (0 KB flash, 0 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.91b, compiled Sep 15 2014 09:17:56
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20090928 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F405RGTx
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Include "I:\\IMU\\ADI_AHRS\\I9DOF_F401\\User\\JLinkSettings.ini" 
+[BREAKPOINTS]
+^
+*** error 10: Syntax error
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Include "I:\\IMU\\ADI_AHRS\\I9DOF_F401\\User\\JLinkSettings.ini" 
+[BREAKPOINTS]
+^
+*** error 10: Syntax error
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+PH(SPIx));
+Lib\src\stm32f4xx_spi.c(540): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(565): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_23_PERIPH_EXT(SPIx));
+Lib\src\stm32f4xx_spi.c(592): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(592): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(592): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(592): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(612): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(612): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(612): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(612): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(638): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(638): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(638): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(638): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(662): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(662): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(662): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(662): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(693): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(693): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(693): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(693): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+Lib\src\stm32f4xx_spi.c(732): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_I2S_EXT_PERIPH(I2Sxext));
+Lib\src\stm32f4xx_spi.c(804): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+Lib\src\stm32f4xx_spi.c(804): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+Lib\src\stm32f4xx_spi.c(804): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+Lib\src\stm32f4xx_spi.c(804): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+Lib\src\stm32f4xx_spi.c(820): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+Lib\src\stm32f4xx_spi.c(820): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+Lib\src\stm32f4xx_spi.c(820): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+Lib\src\stm32f4xx_spi.c: 14 warnings, 30 errors
+compiling stm32f4xx_syscfg.c...
+Lib\src\stm32f4xx_syscfg.c(121): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SYSCFG_MEMORY_REMAP_CONFING(SYSCFG_MemoryRemap));
+Lib\src\stm32f4xx_syscfg.c(142): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+Lib\src\stm32f4xx_syscfg.c(167): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_EXTI_PORT_SOURCE(EXTI_PortSourceGPIOx));
+Lib\src\stm32f4xx_syscfg.c(185): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SYSCFG_ETH_MEDIA_INTERFACE(SYSCFG_ETH_MediaInterface)); 
+Lib\src\stm32f4xx_syscfg.c(203): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+Lib\src\stm32f4xx_syscfg.c: 5 warnings, 0 errors
+compiling stm32f4xx_tim.c...
+Lib\src\stm32f4xx_tim.c(203): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+Lib\src\stm32f4xx_tim.c(293): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+Lib\src\stm32f4xx_tim.c(363): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(388): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(412): warning:  #223-D: function "assert_param" declared implicitly
+     assert_param(IS_TIM_ALL_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(427): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(441): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(455): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(471): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(500): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(525): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(552): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(575): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(595): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+Lib\src\stm32f4xx_tim.c(678): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx)); 
+Lib\src\stm32f4xx_tim.c(759): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx)); 
+Lib\src\stm32f4xx_tim.c(840): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+Lib\src\stm32f4xx_tim.c(920): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+Lib\src\stm32f4xx_tim.c(1020): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1063): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1079): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1094): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1109): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1129): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1158): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1186): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1215): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1243): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1273): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1302): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1331): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1360): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1391): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1421): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1451): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1481): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1511): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1540): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1569): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1598): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1624): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1652): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1679): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1706): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1733): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1760): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1791): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx)); 
+Lib\src\stm32f4xx_tim.c(1821): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1903): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(1981): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2035): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2050): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2064): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+Lib\src\stm32f4xx_tim.c(2078): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2098): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2123): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2147): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2171): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2224): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2268): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2293): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2318): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2375): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2413): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2447): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2488): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2518): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2557): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_ALL_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2594): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2621): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST5_PERIPH(TIMx)); 
+Lib\src\stm32f4xx_tim.c(2647): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2686): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2707): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2738): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2780): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2825): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2897): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST1_PERIPH(TIMx)); 
+Lib\src\stm32f4xx_tim.c(2938): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST5_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2962): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(2985): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(3018): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(3078): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(3125): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c(3176): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+Lib\src\stm32f4xx_tim.c: 84 warnings, 0 errors
+compiling stm32f4xx_usart.c...
+Lib\src\stm32f4xx_usart.c(190): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(190): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(190): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(254): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(254): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(254): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(383): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_1236_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(430): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(430): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(430): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(456): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(456): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(456): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(477): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(477): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(477): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(503): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(503): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(503): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(560): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(560): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(560): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(576): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(576): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(576): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(628): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(628): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(628): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(648): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(648): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(648): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(675): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(675): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(675): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(744): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(744): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(744): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(762): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(762): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(762): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(786): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(786): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(786): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(839): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(839): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c(839): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+Lib\src\stm32f4xx_usart.c: 16 warnings, 30 errors
+compiling misc.c...
+Lib\src\misc.c(121): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_NVIC_PRIORITY_GROUP(NVIC_PriorityGroup));
+Lib\src\misc.c(141): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NVIC_InitStruct->NVIC_IRQChannelCmd));
+Lib\src\misc.c(183): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_NVIC_VECTTAB(NVIC_VectTab));
+Lib\src\misc.c(202): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_NVIC_LP(LowPowerMode));
+Lib\src\misc.c(226): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_SYSTICK_CLK_SOURCE(SysTick_CLKSource));
+Lib\src\misc.c: 5 warnings, 0 errors
+compiling stm32f4xx_dma.c...
+Lib\src\stm32f4xx_dma.c(199): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(324): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(481): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(517): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(553): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(635): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(650): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(734): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(764): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(806): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(833): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(948): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(982): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(1011): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(1076): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(1121): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(1177): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c(1257): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+Lib\src\stm32f4xx_dma.c: 18 warnings, 0 errors
+compiling stm32f4xx_flash.c...
+Lib\src\stm32f4xx_flash.c(250): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_LATENCY(FLASH_Latency));
+Lib\src\stm32f4xx_flash.c(265): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+Lib\src\stm32f4xx_flash.c(287): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+Lib\src\stm32f4xx_flash.c(308): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+Lib\src\stm32f4xx_flash.c(442): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_SECTOR(FLASH_Sector));
+Lib\src\stm32f4xx_flash.c(511): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_VOLTAGERANGE(VoltageRange));
+Lib\src\stm32f4xx_flash.c(592): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_VOLTAGERANGE(VoltageRange));
+Lib\src\stm32f4xx_flash.c(615): error:  #20: identifier "FLASH_CR_MER1" is undefined
+       FLASH->CR |= FLASH_CR_MER1;
+Lib\src\stm32f4xx_flash.c(659): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_VOLTAGERANGE(VoltageRange));
+Lib\src\stm32f4xx_flash.c(682): error:  #20: identifier "FLASH_CR_MER2" is undefined
+       FLASH->CR |= FLASH_CR_MER2;
+Lib\src\stm32f4xx_flash.c(714): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_ADDRESS(Address));
+Lib\src\stm32f4xx_flash.c(757): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_ADDRESS(Address));
+Lib\src\stm32f4xx_flash.c(799): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_ADDRESS(Address));
+Lib\src\stm32f4xx_flash.c(841): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_ADDRESS(Address));
+Lib\src\stm32f4xx_flash.c(978): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_OB_WRP(OB_WRP));
+Lib\src\stm32f4xx_flash.c(1020): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_OB_WRP(OB_WRP));
+Lib\src\stm32f4xx_flash.c(1070): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_OB_PCROP_SELECT(OB_PcROP));
+Lib\src\stm32f4xx_flash.c(1100): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_OB_PCROP(OB_PCROP));
+Lib\src\stm32f4xx_flash.c(1137): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_OB_PCROP(OB_PCROP));
+Lib\src\stm32f4xx_flash.c(1173): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_OB_RDP(OB_RDP));
+Lib\src\stm32f4xx_flash.c(1206): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_OB_IWDG_SOURCE(OB_IWDG));
+Lib\src\stm32f4xx_flash.c(1244): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_OB_BOOT(OB_BOOT));
+Lib\src\stm32f4xx_flash.c(1247): error:  #20: identifier "FLASH_OPTCR_BFB2" is undefined
+    *(__IO uint8_t *)OPTCR_BYTE0_ADDRESS &= (~FLASH_OPTCR_BFB2);
+Lib\src\stm32f4xx_flash.c(1265): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_OB_BOR(OB_BOR));
+Lib\src\stm32f4xx_flash.c(1420): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_IT(FLASH_IT)); 
+Lib\src\stm32f4xx_flash.c(1453): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_GET_FLAG(FLASH_FLAG));
+Lib\src\stm32f4xx_flash.c(1483): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FLASH_CLEAR_FLAG(FLASH_FLAG));
+Lib\src\stm32f4xx_flash.c: 24 warnings, 3 errors
+compiling stm32f4xx_gpio.c...
+Lib\src\stm32f4xx_gpio.c(130): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(130): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(130): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(207): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(207): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(207): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(282): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(282): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(282): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(328): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(328): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(328): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(352): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(352): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(352): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(371): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(371): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(371): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(395): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(395): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(395): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(415): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(415): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(415): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(436): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(436): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(436): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(458): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(458): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(458): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(483): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(483): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(483): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(499): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(499): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(499): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(585): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(585): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c(585): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+Lib\src\stm32f4xx_gpio.c: 13 warnings, 26 errors
+compiling stm32f4xx_rcc.c...
+Lib\src\stm32f4xx_rcc.c(231): error:  #136: struct "<unnamed>" has no field "PLLSAICFGR"
+    RCC->PLLSAICFGR = 0x24003000;
+Lib\src\stm32f4xx_rcc.c(240): error:  #136: struct "<unnamed>" has no field "DCKCFGR"
+    RCC->DCKCFGR = 0x00000000; 
+Lib\src\stm32f4xx_rcc.c(267): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_HSE(RCC_HSE));
+Lib\src\stm32f4xx_rcc.c(298): error:  #20: identifier "HSE_STARTUP_TIMEOUT" is undefined
+    } while((startupcounter != HSE_STARTUP_TIMEOUT) && (hsestatus == RESET));
+Lib\src\stm32f4xx_rcc.c(323): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_CALIBRATION_VALUE(HSICalibrationValue));
+Lib\src\stm32f4xx_rcc.c(358): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+Lib\src\stm32f4xx_rcc.c(383): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_LSE(RCC_LSE));
+Lib\src\stm32f4xx_rcc.c(423): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+Lib\src\stm32f4xx_rcc.c(466): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_PLL_SOURCE(RCC_PLLSource));
+Lib\src\stm32f4xx_rcc.c(489): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+Lib\src\stm32f4xx_rcc.c(519): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_PLLI2SN_VALUE(PLLI2SN));
+Lib\src\stm32f4xx_rcc.c(572): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+Lib\src\stm32f4xx_rcc.c(601): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_PLLSAIN_VALUE(PLLSAIN));
+Lib\src\stm32f4xx_rcc.c(604): error:  #136: struct "<unnamed>" has no field "PLLSAICFGR"
+    RCC->PLLSAICFGR = (PLLSAIN << 6) | (PLLSAIQ << 24) | (PLLSAIR << 28);
+Lib\src\stm32f4xx_rcc.c(619): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+Lib\src\stm32f4xx_rcc.c(637): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+Lib\src\stm32f4xx_rcc.c(664): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_MCO1SOURCE(RCC_MCO1Source));
+Lib\src\stm32f4xx_rcc.c(702): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_MCO2SOURCE(RCC_MCO2Source));
+Lib\src\stm32f4xx_rcc.c(868): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_SYSCLK_SOURCE(RCC_SYSCLKSource));
+Lib\src\stm32f4xx_rcc.c(921): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_HCLK(RCC_SYSCLK));
+Lib\src\stm32f4xx_rcc.c(953): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_PCLK(RCC_HCLK));
+Lib\src\stm32f4xx_rcc.c(984): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_PCLK(RCC_HCLK));
+Lib\src\stm32f4xx_rcc.c(1041): error:  #20: identifier "HSI_VALUE" is undefined
+        RCC_Clocks->SYSCLK_Frequency = HSI_VALUE;
+Lib\src\stm32f4xx_rcc.c(1044): error:  #20: identifier "HSE_VALUE" is undefined
+        RCC_Clocks->SYSCLK_Frequency = HSE_VALUE;
+Lib\src\stm32f4xx_rcc.c(1161): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_RTCCLK_SOURCE(RCC_RTCCLKSource));
+Lib\src\stm32f4xx_rcc.c(1191): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+Lib\src\stm32f4xx_rcc.c(1208): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_FUNCTIONAL_STATE(NewState));
+Lib\src\stm32f4xx_rcc.c(1225): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_I2SCLK_SOURCE(RCC_I2SCLKSource));
+Lib\src\stm32f4xx_rcc.c(1248): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_PLLI2S_DIVQ_VALUE(RCC_PLLI2SDivQ));
+Lib\src\stm32f4xx_rcc.c(1250): error:  #136: struct "<unnamed>" has no field "DCKCFGR"
+    tmpreg = RCC->DCKCFGR;
+Lib\src\stm32f4xx_rcc.c(1253): error:  #20: identifier "RCC_DCKCFGR_PLLI2SDIVQ" is undefined
+    tmpreg &= ~(RCC_DCKCFGR_PLLI2SDIVQ);
+Lib\src\stm32f4xx_rcc.c(1259): error:  #136: struct "<unnamed>" has no field "DCKCFGR"
+    RCC->DCKCFGR = tmpreg;
+Lib\src\stm32f4xx_rcc.c(1280): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_PLLSAI_DIVQ_VALUE(RCC_PLLSAIDivQ));
+Lib\src\stm32f4xx_rcc.c(1282): error:  #136: struct "<unnamed>" has no field "DCKCFGR"
+    tmpreg = RCC->DCKCFGR;
+Lib\src\stm32f4xx_rcc.c(1285): error:  #20: identifier "RCC_DCKCFGR_PLLSAIDIVQ" is undefined
+    tmpreg &= ~(RCC_DCKCFGR_PLLSAIDIVQ);
+Lib\src\stm32f4xx_rcc.c(1291): error:  #136: struct "<unnamed>" has no field "DCKCFGR"
+    RCC->DCKCFGR = tmpreg;
+Lib\src\stm32f4xx_rcc.c(1316): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_SAIACLK_SOURCE(RCC_SAIBlockACLKSource));
+Lib\src\stm32f4xx_rcc.c(1318): error:  #136: struct "<unnamed>" has no field "DCKCFGR"
+    tmpreg = RCC->DCKCFGR;
+Lib\src\stm32f4xx_rcc.c(1321): error:  #20: identifier "RCC_DCKCFGR_SAI1ASRC" is undefined
+    tmpreg &= ~RCC_DCKCFGR_SAI1ASRC;
+Lib\src\stm32f4xx_rcc.c(1327): error:  #136: struct "<unnamed>" has no field "DCKCFGR"
+    RCC->DCKCFGR = tmpreg;
+Lib\src\stm32f4xx_rcc.c(1352): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_SAIBCLK_SOURCE(RCC_SAIBlockBCLKSource));
+Lib\src\stm32f4xx_rcc.c(1354): error:  #136: struct "<unnamed>" has no field "DCKCFGR"
+    tmpreg = RCC->DCKCFGR;
+Lib\src\stm32f4xx_rcc.c(1357): error:  #20: identifier "RCC_DCKCFGR_SAI1BSRC" is undefined
+    tmpreg &= ~RCC_DCKCFGR_SAI1BSRC;
+Lib\src\stm32f4xx_rcc.c(1363): error:  #136: struct "<unnamed>" has no field "DCKCFGR"
+    RCC->DCKCFGR = tmpreg;
+Lib\src\stm32f4xx_rcc.c(1385): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_PLLSAI_DIVR_VALUE(RCC_PLLSAIDivR));
+Lib\src\stm32f4xx_rcc.c(1387): error:  #136: struct "<unnamed>" has no field "DCKCFGR"
+    tmpreg = RCC->DCKCFGR;
+Lib\src\stm32f4xx_rcc.c(1390): error:  #20: identifier "RCC_DCKCFGR_PLLSAIDIVR" is undefined
+    tmpreg &= ~RCC_DCKCFGR_PLLSAIDIVR;
+Lib\src\stm32f4xx_rcc.c(1396): error:  #136: struct "<unnamed>" has no field "DCKCFGR"
+    RCC->DCKCFGR = tmpreg;
+Lib\src\stm32f4xx_rcc.c(1420): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_TIMCLK_PRESCALER(RCC_TIMCLKPrescaler));
+Lib\src\stm32f4xx_rcc.c(1463): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB1_CLOCK_PERIPH(RCC_AHB1Periph));
+Lib\src\stm32f4xx_rcc.c(1495): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB2_PERIPH(RCC_AHB2Periph));
+Lib\src\stm32f4xx_rcc.c(1523): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB3_PERIPH(RCC_AHB3Periph));  
+Lib\src\stm32f4xx_rcc.c(1575): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_APB1_PERIPH(RCC_APB1Periph));  
+Lib\src\stm32f4xx_rcc.c(1620): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_APB2_PERIPH(RCC_APB2Periph));
+Lib\src\stm32f4xx_rcc.c(1662): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB1_RESET_PERIPH(RCC_AHB1Periph));
+Lib\src\stm32f4xx_rcc.c(1691): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB2_PERIPH(RCC_AHB2Periph));
+Lib\src\stm32f4xx_rcc.c(1716): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB3_PERIPH(RCC_AHB3Periph));
+Lib\src\stm32f4xx_rcc.c(1765): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_APB1_PERIPH(RCC_APB1Periph));
+Lib\src\stm32f4xx_rcc.c(1806): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_APB2_RESET_PERIPH(RCC_APB2Periph));
+Lib\src\stm32f4xx_rcc.c(1855): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB1_LPMODE_PERIPH(RCC_AHB1Periph));
+Lib\src\stm32f4xx_rcc.c(1887): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB2_PERIPH(RCC_AHB2Periph));
+Lib\src\stm32f4xx_rcc.c(1915): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_AHB3_PERIPH(RCC_AHB3Periph));
+Lib\src\stm32f4xx_rcc.c(1967): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_APB1_PERIPH(RCC_APB1Periph));
+Lib\src\stm32f4xx_rcc.c(2012): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_APB2_PERIPH(RCC_APB2Periph));
+Lib\src\stm32f4xx_rcc.c(2058): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_IT(RCC_IT));
+Lib\src\stm32f4xx_rcc.c(2099): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_FLAG(RCC_FLAG));
+Lib\src\stm32f4xx_rcc.c(2162): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_GET_IT(RCC_IT));
+Lib\src\stm32f4xx_rcc.c(2194): warning:  #223-D: function "assert_param" declared implicitly
+    assert_param(IS_RCC_CLEAR_IT(RCC_IT));
+Lib\src\stm32f4xx_rcc.c: 47 warnings, 21 errors
+compiling main.c...
+User\main.c(30): error:  #5: cannot open source input file "stm32f401_discovery.h": No such file or directory
+  #include "stm32f401_discovery.h"
+User\main.c: 0 warnings, 1 error
+compiling stm32f4xx_it.c...
+compiling system_stm32f4xx.c...
+User\system_stm32f4xx.c(256): error:  #20: identifier "HSI_VALUE" is undefined
+        SystemCoreClock = HSI_VALUE;
+User\system_stm32f4xx.c(259): error:  #20: identifier "HSE_VALUE" is undefined
+        SystemCoreClock = HSE_VALUE;
+User\system_stm32f4xx.c(332): error:  #20: identifier "HSE_STARTUP_TIMEOUT" is undefined
+    } while((HSEStatus == 0) && (StartUpCounter != HSE_STARTUP_TIMEOUT));
+User\system_stm32f4xx.c: 0 warnings, 3 errors
+".\Output\I9DOF_STM32F4.axf" - 114 Error(s), 226 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  I:\IMU\ADI_AHRS\I9DOF_F401\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.

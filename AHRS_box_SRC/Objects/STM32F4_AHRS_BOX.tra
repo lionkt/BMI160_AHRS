@@ -1,0 +1,69 @@
+*** Creating Trace Output File '.\Objects\STM32F4_AHRS_BOX.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\objects\stm32f4xx_syscfg.o"'
+### List of Objects: adding '".\objects\stm32f4xx_tim.o"'
+### List of Objects: adding '".\objects\stm32f4xx_usart.o"'
+### List of Objects: adding '".\objects\misc.o"'
+### List of Objects: adding '".\objects\stm32f4xx_dma.o"'
+### List of Objects: adding '".\objects\stm32f4xx_gpio.o"'
+### List of Objects: adding '".\objects\stm32f4xx_rcc.o"'
+### List of Objects: adding '".\objects\stm32f4xx_spi.o"'
+### List of Objects: adding '".\objects\startup_stm32f401xx.o"'
+### List of Objects: adding '".\objects\stm32f4xx_flash.o"'
+### List of Objects: adding '".\objects\stm32f4xx_adc.o"'
+### List of Objects: adding '".\objects\stm32f4xx_sdio.o"'
+### List of Objects: adding '".\objects\led.o"'
+### List of Objects: adding '".\objects\delay.o"'
+### List of Objects: adding '".\objects\ioi2c.o"'
+### List of Objects: adding '".\objects\ms5611.o"'
+### List of Objects: adding '".\objects\spi2.o"'
+### List of Objects: adding '".\objects\eeprom.o"'
+### List of Objects: adding '".\objects\imu.o"'
+### List of Objects: adding '".\objects\stm32adc.o"'
+### List of Objects: adding '".\objects\spi1.o"'
+### List of Objects: adding '".\objects\time3_driver.o"'
+### List of Objects: adding '".\objects\hmc5983.o"'
+### List of Objects: adding '".\objects\bmi160.o"'
+### List of Objects: adding '".\objects\main.o"'
+### List of Objects: adding '".\objects\stm32f4xx_it.o"'
+### List of Objects: adding '".\objects\system_stm32f4xx.o"'
+### List of Objects: adding '".\objects\fat_driver.o"'
+### List of Objects: adding '".\objects\diskio.o"'
+### List of Objects: adding '".\objects\ff.o"'
+### List of Objects: adding '".\objects\sdio_sdcard.o"'
+### List of Objects: adding '".\objects\usb_dcd_int.o"'
+### List of Objects: adding '".\objects\usb_core.o"'
+### List of Objects: adding '".\objects\usb_dcd.o"'
+### List of Objects: adding '".\objects\usbd_core.o"'
+### List of Objects: adding '".\objects\usbd_ioreq.o"'
+### List of Objects: adding '".\objects\usbd_req.o"'
+### List of Objects: adding '".\objects\usbd_msc_bot.o"'
+### List of Objects: adding '".\objects\usbd_msc_core.o"'
+### List of Objects: adding '".\objects\usbd_msc_data.o"'
+### List of Objects: adding '".\objects\usbd_msc_scsi.o"'
+### List of Objects: adding '".\objects\usb_bsp.o"'
+### List of Objects: adding '".\objects\usb_it.o"'
+### List of Objects: adding '".\objects\usbd_desc.o"'
+### List of Objects: adding '".\objects\usbd_storage_msd.o"'
+### List of Objects: adding '".\objects\usbd_usr.o"'
+### List of Objects: adding '".\objects\uart2.o"'
+### List of Objects: adding '".\objects\osqmem.o"'
+### List of Objects: adding '".\objects\usart2dmatx.o"'
+### List of Objects: adding '".\objects\uart1.o"'
+### List of Objects: adding '".\objects\usart1dmatx.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M4.fp ".\objects\stm32f4xx_syscfg.o" ".\objects\stm32f4xx_tim.o" ".\objects\stm32f4xx_usart.o" ".\objects\misc.o" ".\objects\stm32f4xx_dma.o" ".\objects\stm32f4xx_gpio.o" ".\objects\stm32f4xx_rcc.o" ".\objects\stm32f4xx_spi.o" ".\objects\startup_stm32f401xx.o" ".\objects\stm32f4xx_flash.o" ".\objects\stm32f4xx_adc.o" ".\objects\stm32f4xx_sdio.o" ".\objects\led.o" ".\objects\delay.o" ".\objects\ioi2c.o" ".\objects\ms5611.o" ".\objects\spi2.o" ".\objects\eeprom.o" ".\objects\imu.o" ".\objects\stm32adc.o" ".\objects\spi1.o" ".\objects\time3_driver.o" ".\objects\hmc5983.o" ".\objects\bmi160.o" ".\objects\main.o" ".\objects\stm32f4xx_it.o" ".\objects\system_stm32f4xx.o" ".\objects\fat_driver.o" ".\objects\diskio.o" ".\objects\ff.o" ".\objects\sdio_sdcard.o" ".\objects\usb_dcd_int.o" ".\objects\usb_core.o" ".\objects\usb_dcd.o" ".\objects\usbd_core.o" ".\objects\usbd_ioreq.o" ".\objects\usbd_req.o" ".\objects\usbd_msc_bot.o" ".\objects\usbd_msc_core.o" ".\objects\usbd_msc_data.o" ".\objects\usbd_msc_scsi.o" ".\objects\usb_bsp.o" ".\objects\usb_it.o" ".\objects\usbd_desc.o" ".\objects\usbd_storage_msd.o" ".\objects\usbd_usr.o" ".\objects\uart2.o" ".\objects\osqmem.o" ".\objects\usart2dmatx.o" ".\objects\uart1.o" ".\objects\usart1dmatx.o" --strict --scatter ".\Objects\STM32F4_AHRS_BOX.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Listings\STM32F4_AHRS_BOX.map" -o ".\Objects\STM32F4_AHRS_BOX.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Objects\STM32F4_AHRS_BOX.axf'
+### ADS-LD Command File: '.\Objects\STM32F4_AHRS_BOX.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Objects\STM32F4_AHRS_BOX.lnp', Handle=0x000005D4
+### Writing '.lnp' file
+### ADS-LD Command file '.\Objects\STM32F4_AHRS_BOX.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

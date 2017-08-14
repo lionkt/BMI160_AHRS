@@ -1,0 +1,7 @@
+ usb_dcd_int.c
+
+增加 #include "usb_conf.h"
+避免 IAR 报警:
+Error[Li005]: no definition for "USBD_OTG_EP1IN_ISR_Handler" [referenced from E:\MyData\STM32-F4-A\软件\src\ 
+
+ 未解决。

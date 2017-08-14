@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "uart1.h": "c",
+        "bmi160.h": "c",
+        "stm32f4xx.h": "c",
+        "eeprom.h": "c",
+        "data_map.h": "c"
+    }
+}
