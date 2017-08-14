@@ -4399,59 +4399,59 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      1898        284          0         56        120       8530   bmi160.o
-       268         26          0          4          0       2270   delay.o
-       388         22          0          0          0       4204   diskio.o
-       468         60          0          0        308       4906   eeprom.o
-      1340        170          0         40       2318       9471   fat_driver.o
-      4840         46          0          2         12      24859   ff.o
-      4604        284          0         96         36       7277   imu.o
-       940        100          0          2          0       7672   ioi2c.o
-       780        116          0        181          0       4620   led.o
-      1236        166          0         28          0      23986   main.o
-       140         24          0          0          0       1443   misc.o
-      1824        208          0        104        132       9953   ms5611.o
-       228          6          0          0       3136       4056   osqmem.o
-      1486        216          0         48         66       7885   qmc5883.o
-      7518        418          0        528        704      34286   sdio_sdcard.o
+      1898        284          0         56        120       8502   bmi160.o
+       268         26          0          4          0       2266   delay.o
+       388         22          0          0          0       4188   diskio.o
+       468         60          0          0        308       4886   eeprom.o
+      1340        170          0         40       2318       9447   fat_driver.o
+      4840         46          0          2         12      24811   ff.o
+      4604        284          0         96         36       7253   imu.o
+       940        100          0          2          0       7648   ioi2c.o
+       780        116          0        181          0       4604   led.o
+      1236        166          0         28          0      23962   main.o
+       140         24          0          0          0       1435   misc.o
+      1824        208          0        104        132       9941   ms5611.o
+       228          6          0          0       3136       4044   osqmem.o
+      1486        216          0         48         66       7869   qmc5883.o
+      7518        418          0        528        704      34230   sdio_sdcard.o
        364         22          0          1          0       2899   spi1.o
-       264         12          0          1          0        897   spi2.o
+       264         12          0          1          0        893   spi2.o
         64         26        392          0       1536        816   startup_stm32f401xx.o
-       480         54          0          8         20       4038   stm32adc.o
-       392         24          0          0          0       5219   stm32f4xx_adc.o
-       706         58          0          0          0       6041   stm32f4xx_dma.o
-       240          0          0          0          0       3315   stm32f4xx_gpio.o
-        26          0          0          0          0       3974   stm32f4xx_it.o
-       424         54          0         16          0       6102   stm32f4xx_rcc.o
-       208         38          0          0          0       5429   stm32f4xx_sdio.o
-        84          0          0          0          0       1637   stm32f4xx_spi.o
-         0          0          0          0          0     324096   stm32f4xx_syscfg.o
-       694         58          0          0          0       6037   stm32f4xx_tim.o
-       692         42          0          0          0       5874   stm32f4xx_usart.o
-       344         34          0          0          0       1465   system_stm32f4xx.o
-       190         20          0          0          0       2574   time3_driver.o
-       840         64          0          6        200       5842   uart1.o
-      2280         88          0         10        358       9146   uart2.o
-       672         58          0         12       2192       3563   usart1dmatx.o
-       672         58          0         12        752       3563   usart2dmatx.o
-       176          6          0          0          0       2739   usb_bsp.o
-      3404         18          0          0          0      21000   usb_core.o
-       736          0          0          0          0       6995   usb_dcd.o
-      1930         50          0          0          0       9403   usb_dcd_int.o
+       480         54          0          8         20       4026   stm32adc.o
+       392         24          0          0          0       5207   stm32f4xx_adc.o
+       706         58          0          0          0       6025   stm32f4xx_dma.o
+       240          0          0          0          0       3307   stm32f4xx_gpio.o
+        26          0          0          0          0       3954   stm32f4xx_it.o
+       424         54          0         16          0       6098   stm32f4xx_rcc.o
+       208         38          0          0          0       5413   stm32f4xx_sdio.o
+        84          0          0          0          0       1629   stm32f4xx_spi.o
+         0          0          0          0          0     324076   stm32f4xx_syscfg.o
+       694         58          0          0          0       6009   stm32f4xx_tim.o
+       692         42          0          0          0       5850   stm32f4xx_usart.o
+       344         34          0          0          0       1461   system_stm32f4xx.o
+       190         20          0          0          0       2566   time3_driver.o
+       840         64          0          6        200       5826   uart1.o
+      2280         88          0         10        358       9114   uart2.o
+       672         58          0         12       2192       3555   usart1dmatx.o
+       672         58          0         12        752       3555   usart2dmatx.o
+       176          6          0          0          0       2723   usb_bsp.o
+      3404         18          0          0          0      20940   usb_core.o
+       736          0          0          0          0       6983   usb_dcd.o
+      1930         50          0          0          0       9379   usb_dcd_int.o
         16          6          0          0          0        508   usb_it.o
-       760          6          0         52          0      10332   usbd_core.o
-       344        168          0         60          0       5852   usbd_desc.o
-       198          0          0          0          0       4326   usbd_ioreq.o
-       748        124          0          4       4144       8277   usbd_msc_bot.o
-       420         18          0         78          0       5005   usbd_msc_core.o
-         0          0         23          0          0        785   usbd_msc_data.o
-      2044        278          0         24         32      14541   usbd_msc_scsi.o
-      1732         54          0         13         64      10423   usbd_req.o
-       588        258         36         40          0       6435   usbd_storage_msd.o
-       496        316          0         32       1524       5079   usbd_usr.o
+       760          6          0         52          0      10308   usbd_core.o
+       344        168          0         60          0       5836   usbd_desc.o
+       198          0          0          0          0       4314   usbd_ioreq.o
+       748        124          0          4       4144       8253   usbd_msc_bot.o
+       420         18          0         78          0       4989   usbd_msc_core.o
+         0          0         23          0          0        781   usbd_msc_data.o
+      2044        278          0         24         32      14493   usbd_msc_scsi.o
+      1732         54          0         13         64      10379   usbd_req.o
+       588        258         36         40          0       6423   usbd_storage_msd.o
+       496        316          0         32       1524       5055   usbd_usr.o
 
     ----------------------------------------------------------------------
-     51242       4158        490       1476      17664     669645   Object Totals
+     51242       4158        490       1476      17664     668729   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         56          0          7         18         10          0   (incl. Padding)
 
@@ -4540,8 +4540,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     61598       5036        866       1476      17764     632685   Grand Totals
-     61598       5036        866        380      17764     632685   ELF Image Totals (compressed)
+     61598       5036        866       1476      17764     631769   Grand Totals
+     61598       5036        866        380      17764     631769   ELF Image Totals (compressed)
      61598       5036        866        380          0          0   ROM Totals
 
 ==============================================================================
