@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\STM32F4_AHRS_BOX.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\STM32F4_AHRS_BOX.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Mon Aug 14 11:56:24 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Mon Aug 14 17:44:32 2017
 <BR><P>
 <H3>Maximum Stack Usage =        576 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -2240,11 +2240,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xx.o(.text)
 </UL>
-<P><STRONG><a name="[4a]"></a>TIM3_IRQHandler</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, main.o(i.TIM3_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = TIM3_IRQHandler &rArr; Updata_PC_Route &rArr; UART2_ReportMotion &rArr; USART2WriteDataToBuffer &rArr; USART2DMAConfig &rArr; NVIC_Init
-</UL>
-<BR>[Calls]<UL><LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Updata_PC_Route
-</UL>
+<P><STRONG><a name="[4a]"></a>TIM3_IRQHandler</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, main.o(i.TIM3_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xx.o(RESET)
 </UL>
 <P><STRONG><a name="[4b]"></a>TIM4_IRQHandler</STRONG> (Thumb, 788 bytes, Stack size 8 bytes, fat_driver.o(i.TIM4_IRQHandler))
@@ -3105,7 +3101,6 @@ Global Symbols
 <LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_ReportHMC
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM4_IRQHandler
-<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM3_IRQHandler
 </UL>
 
 <P><STRONG><a name="[2c]"></a>UsageFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.UsageFault_Handler))

@@ -1,0 +1,23 @@
+{
+	"bookmarks": [
+		{
+			"fsPath": "$ROOTPATH$\\User\\main.c",
+			"bookmarks": [
+				113
+			]
+		},
+		{
+			"fsPath": "$ROOTPATH$\\FatFs\\FAT_driver.c",
+			"bookmarks": [
+				147,
+				278
+			]
+		},
+		{
+			"fsPath": "$ROOTPATH$\\HW_Driver\\BMI160\\BMI160.c",
+			"bookmarks": [
+				228
+			]
+		}
+	]
+}
