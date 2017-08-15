@@ -2,7 +2,7 @@
 #include "UART1.h"
 #include  "IMU.h"
 
-#define FILE_BUF_LENGTH 3	//crown add，定义文件缓冲区的长度
+#define FILE_BUF_LENGTH 20	//crown add，定义文件缓冲区的长度
 
 FATFS fs;  		//逻辑磁盘工作区.	 
 FIL file;	  		//文件1
@@ -244,12 +244,19 @@ if (TIM4->SR&0X0001)//溢出中断
 		sum += File_Data[i]; 
 		
 	File_Data[44] = sum;
-
-	if(Data_Ready == 0x0){ //确认数据已保存
+	
+	//原来的写法，只适用于缓冲区为1帧的情况
+	// if(Data_Ready == 0x0){ //确认数据已保存
+	// 	for(i=0;i<sizeof(File_Data);i++) //复制数据到缓冲区
+	// 		File_Data_buf[i] = File_Data[i];		
+	// }
+	
+	//crown change，延长了缓冲区的做法
 	for(i=0;i<sizeof(File_Data);i++) //复制数据到缓冲区
-		File_Data_buf[toBuf_ptr*45 + i] = File_Data[i];		//crown change
-	}
-	toBuf_ptr = (toBuf_ptr+1)%FILE_BUF_LENGTH;	//crown add
+		File_Data_buf[toBuf_ptr*sizeof(File_Data) + i] = File_Data[i];		//crown change
+
+	toBuf_ptr = (toBuf_ptr + 1)%FILE_BUF_LENGTH;	//crown add
+
 	Updata_PC_Route();	
 	Data_Ready = 1;
 	//LED_Reverse();
@@ -282,24 +289,28 @@ void File_head(void){
 
 //定时调用，以确定是否有数据需要写到文件
 void File_Save_Routing(void){
-     
+     unsigned char now_toBuf_ptr = toBuf_ptr;		//记录调用时的toBuf_ptr，防止调用时发生中断修改了toBuf_ptr
 	 if(Data_Ready){
 		// crown change
-		if(toBuf_ptr <= toFile_ptr)
+		if(now_toBuf_ptr <= toFile_ptr)
 		{
-			int start_index = toFile_ptr*45;
-			if(mf_write(File_Data_buf + start_index,sizeof(File_Data*(FILE_BUF_LENGTH-toFile_ptr))==0);		//先写一段
-			if(mf_write(File_Data_buf,sizeof(File_Data*(toBuf_ptr))==0);		//再写令一段
-
+			int start_index = toFile_ptr*sizeof(File_Data);
+			if(mf_write(File_Data_buf + start_index,sizeof(File_Data)*(FILE_BUF_LENGTH-toFile_ptr))==0);		//先写一段
+			if(mf_write(File_Data_buf,sizeof(File_Data)*(now_toBuf_ptr))==0);									//再写另一段
 		}
 		else
 		{
-			int start_index = toFile_ptr*45;
-			int temp_write_length = toBuf_ptr - toFile_ptr;
-			if(mf_write(File_Data_buf+start_index,sizeof(File_Data*temp_write_length))==0);				//这种情况下可以一次写完
+			int start_index = toFile_ptr*sizeof(File_Data);
+			int temp_write_length = now_toBuf_ptr - toFile_ptr;
+			if(mf_write(File_Data_buf+start_index,sizeof(File_Data)*temp_write_length)==0);				//这种情况下可以一次写完
 		}
-		toFile_ptr = toBuf_ptr;		//crown add,更新toFile_ptr指针的位置
-		Data_Ready = 0;
+		toFile_ptr = now_toBuf_ptr;		//crown add,更新toFile_ptr指针的位置
+		if(now_toBuf_ptr != toBuf_ptr){
+			Data_Ready = 1;				//说明数据还没有写完
+		}
+		else{
+			Data_Ready = 0;
+		}
 	}
 
 }

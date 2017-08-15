@@ -12,3 +12,6 @@ BMI160 firmware source codes.
 ## 2017-8-14
 1. 写成_routing的函数都是需要定时调用的
 
+## 8-15
+1. 利用循环的数组下标的方式写了FileBuf_Data的缓冲区
+
