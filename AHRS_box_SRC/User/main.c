@@ -233,6 +233,7 @@ void USB_Check(void)
 	BEEP_ON();
 	delay_ms(100);
 	BEEP_OFF();
+	FileSave_Stop();	//crown add, 进入U盘模式时，关闭TIM4定时器
 	while (1)
 	{
 		if (Divece_STA == 0x01)
