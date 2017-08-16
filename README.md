@@ -15,3 +15,5 @@ BMI160 firmware source codes.
 ## 8-15
 1. 利用循环的数组下标的方式写了FileBuf_Data的缓冲区
 
+## 8-16
+1. 淘宝的卖家建议继续扩大缓冲区，扩充到4096 bytes试试
