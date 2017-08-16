@@ -133,7 +133,7 @@ int main(void)
 			File_Save_Routing();
 
 		MS5611BA_Routing();
-		IMU_getYawPitchRoll(ypr);		
+		// IMU_getYawPitchRoll(ypr);		
 		Math_hz++;
 		cly_count++;
 		if ((cly_count > 200) && (SD_Ready != 0))
@@ -232,6 +232,7 @@ void USB_Check(void)
 		return;
 	BEEP_ON();
 	delay_ms(100);
+	FileSave_Stop();		//作为U盘时，停止TIM4的定时器
 	BEEP_OFF();
 	while (1)
 	{

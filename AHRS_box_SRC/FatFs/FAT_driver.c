@@ -192,6 +192,8 @@ unsigned char File_Data_buf[45];
 unsigned char Data_Ready = 0;
 uint16_t Save_Err_count = 0;
 extern void Updata_PC_Route(void);
+int16_t accgyroval_new[6];			//crown add
+int16_t magnetval_new[6];
 void TIM4_IRQHandler(void)
 {
 	static int i, sum;
@@ -203,6 +205,9 @@ void TIM4_IRQHandler(void)
 			TIM4->SR &= ~(1 << 0);
 			return;
 		}
+		BMI160_readAccGyro(accgyroval_new);
+		QMC5883_getlastValues(magnetval_new, magnetval_new + 1, magnetval_new + 2);
+		// QMC5883_mgetValues(accgyroval_new + 6);
 		dtime = micros();
 
 		File_Data[0] = 0xA5;
