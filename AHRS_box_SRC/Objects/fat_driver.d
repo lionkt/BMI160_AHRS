@@ -46,3 +46,4 @@
 .\objects\fat_driver.o: .\HW_Driver\EEPROM\eeprom.h
 .\objects\fat_driver.o: .\HW_Driver\MS5611\MS5611.h
 .\objects\fat_driver.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\fat_driver.o: .\HW_Driver\USART_DMA\OSQMem.h
