@@ -133,7 +133,7 @@ int main(void)
 			File_Save_Routing();
 
 		MS5611BA_Routing();
-		// IMU_getYawPitchRoll(ypr);		
+		// IMU_getYawPitchRoll(ypr);		//stm32解算速度太慢，不适合在片上解算四元数
 		Math_hz++;
 		cly_count++;
 		if ((cly_count > 200) && (SD_Ready != 0))
